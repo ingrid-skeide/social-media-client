@@ -10,7 +10,9 @@
     "lint": "npx eslint --fix",
     "prepare": "husky install",
     "test": "npm run test-unit",
-    "test-unit": "jest"
+    "test-e2e": "npm run test-cy",
+    "test-unit": "jest",
+    "test-cy": "cypress open"
   },
   "keywords": [],
   "author": "Noroff",
