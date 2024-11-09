@@ -35,13 +35,14 @@ export default [
     languageOptions: {
       globals: {
         ...globals.es2021,
+        ...globals.jest,
         test: 'readonly',
-        expect: 'readonly'
+        expect: 'readonly',
       },
     },
     rules: {
       ...jestPlugin.configs.recommended.rules,
-    }
+    },
   },
   ...compat.extends('plugin:cypress/recommended').map((config) => ({
     ...config,
